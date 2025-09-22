@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Demo 🎉</h1>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section>
+      <h2>Part 1: Event Handling</h2>
+      <button id="messageBtn">Click Me</button>
+      <p id="message"></p>
+
+      <input type="text" id="keyboardInput" placeholder="Type something...">
+      <p id="liveText"></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>Part 2: Interactive Features</h2>
+
+      <!-- Dark Mode Toggle -->
+      <button id="darkModeBtn">Toggle Dark Mode 🌙</button>
+
+      <!-- Counter -->
+      <div class="counter">
+        <button id="decrement">-</button>
+        <span id="count">0</span>
+        <button id="increment">+</button>
+      </div>
+
+      <!-- FAQ (collapsible) -->
+      <div class="faq">
+        <h3 class="faq-question">What is JavaScript? ▼</h3>
+        <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Part 3: Form Validation</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name">
+          <small class="error" id="nameError"></small>
+        </label><br><br>
+
+        <label>
+          Email:
+          <input type="email" id="email">
+          <small class="error" id="emailError"></small>
+        </label><br><br>
+
+        <label>
+          Password:
+          <input type="password" id="password">
+          <small class="error" id="passwordError"></small>
+        </label><br><br>
+
+        <button type="submit">Sign Up</button>
+        <p id="formSuccess"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive Web Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
